@@ -1,0 +1,15 @@
+;; Object mmm-mode-0.4.8/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mmm-mode-0.4.8/"
+  :tables (list 
+   (semanticdb-table "mmm-class.el"
+    :major-mode 'emacs-lisp-mode
+    :tags '(("cl" include nil nil [1191 1204]) ("mmm-vars" include nil nil [1205 1224]) ("mmm-region" include nil nil [1225 1246]) ("mmm-get-class-spec" function (:arguments ("class")) nil [1305 1974]) ("mmm-get-class-parameter" function (:arguments ("class" "param")) nil [2018 2182]) ("mmm-set-class-parameter" function (:arguments ("class" "param" "value")) nil [2184 2519]) ("mmm-apply-class" function (:arguments ("class" "&optional" "start" "stop" "face")) nil [2548 3184]) ("mmm-apply-classes" function (:arguments ("classes" "&key" "start" "stop" "face")) nil [3186 3919]) ("mmm-apply-all" function (:arguments ("&key" "start" "stop")) nil [3952 4346]) ("mmm-ify" function (:arguments ("&rest" "all" "&key" "classes" "handler" "submode" "match-submode" "start" "stop" "front" "back" "save-matches" "case-fold-search" "beg-sticky" "end-sticky" "include-front" "include-back" "front-offset" "back-offset" "front-delim" "back-delim" "delimiter-mode" "front-face" "back-face" "front-verify" "back-verify" "front-form" "back-form" "creation-hook" "face" "match-face" "save-name" "match-name" "front-match" "back-match" "end-not-begin" "&allow-other-keys")) nil [4399 7453]) ("mmm-match-region" function (:arguments ("&key" "start" "stop" "front" "back" "front-verify" "back-verify" "include-front" "include-back" "front-offset" "back-offset" "front-form" "back-form" "save-matches" "match-submode" "match-face" "front-match" "back-match" "end-not-begin" "save-name" "match-name" "&allow-other-keys")) nil [7482 10169]) ("mmm-match->point" function (:arguments ("beginp" "offset" "match")) nil [10171 10691]) ("mmm-match-and-verify" function (:arguments ("pos" "start" "stop" "&optional" "verify")) nil [10693 11716]) ("mmm-get-form" function (:arguments ("form")) nil [11751 12245]) ("mmm-default-get-form" function nil nil [12247 12312]) ("mmm-class" package nil nil [12321 12341]))
+    :file "mmm-class.el"
+    :pointmax 12369
+    )
+   )
+  :file "semantic.cache"
+  :semantic-tag-version "2.0pre3"
+  :semanticdb-version "2.0pre3"
+  )

@@ -1,0 +1,37 @@
+;;; console related customizations
+
+(setq term-setup-hook
+	  (function 
+	   (lambda ()
+		 (defvar term-local-map (make-sparse-keymap)
+		   "*Keymap for ESC-O encoded keyboard")
+		 (define-key term-local-map "A"  [up])
+		 (define-key term-local-map "B"  [down])
+		 (define-key term-local-map "C"  [right])
+		 (define-key term-local-map "D"  [left])
+		 (define-key term-local-map "2A" [S-up])
+		 (define-key term-local-map "2B" [S-down])
+		 (define-key term-local-map "2C" [S-right])
+		 (define-key term-local-map "2D" [S-left])
+		 (define-key term-local-map "3A" [M-up])
+		 (define-key term-local-map "3B" [M-down])
+		 (define-key term-local-map "3C" [M-right])
+		 (define-key term-local-map "3D" [M-left])
+		 (define-key term-local-map "5A" [C-up])
+		 (define-key term-local-map "5B" [C-down])
+		 (define-key term-local-map "5C" [C-right])
+		 (define-key term-local-map "5D" [C-left])
+		 (define-key term-local-map "6A" [C-S-up])
+		 (define-key term-local-map "6B" [C-S-down])
+		 (define-key term-local-map "6C" [C-S-right])
+		 (define-key term-local-map "6D" [C-S-left])
+		 (define-key esc-map "O" term-local-map)
+
+		 (defvar bracket-local-map (make-sparse-keymap)
+		   "*Keymap for ESC-[ encoded keyboard")
+		 (define-key bracket-local-map "5~" [pgup])
+		 (define-key bracket-local-map "6~" [pgdown])
+		 (define-key esc-map "[" bracket-local-map)
+		 )))
+
+(provide 'my-console)

@@ -1,0 +1,36 @@
+;; Object my-lisp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "my-lisp/"
+  :tables (list 
+   (semanticdb-table "timeclock-buffer.el"
+    :major-mode 'emacs-lisp-mode
+    :tags '(("defgroup" code nil nil [1082 1169]) ("timeclock-buffer-directory" variable (:user-visible-flag t :default-value "~/.timeclock") nil [1171 1324]) ("timeclock-buffer-idle-timeout" variable (:user-visible-flag t :default-value 300) nil [1326 1791]) ("timeclock-buffer-track-idle" variable (:user-visible-flag t :default-value t) nil [1793 2034]) ("timeclock-buffer-list" variable nil nil [2036 2306]) ("timeclock-buffer-last-buffer-info" variable nil nil [2308 2443]) ("timeclock-buffer-info-name" function (:arguments ("info")) nil [2445 2507]) ("timeclock-buffer-info-mode" function (:arguments ("info")) nil [2508 2570]) ("timeclock-buffer-info-timestamp" function (:arguments ("info")) nil [2571 2633]) ("timeclock-buffer-time-to-date" function (:arguments ("time")) nil [2635 2774]) ("timeclock-buffer-file-name" function nil nil [2776 2982]) ("timeclock-buffer-save" function nil nil [2984 3300]) ("timeclock-buffer-load" function nil nil [3302 3450]) ("timeclock-buffer-by-date" function (:arguments ("date")) nil [3452 3619]) ("timeclock-buffer-today" function nil nil [3621 3730]) ("timeclock-buffer-timer" variable nil nil [3752 3840]) ("timeclock-buffer-is-idle" variable nil nil [3842 3930]) ("timeclock-buffer-timer-reset" function (:arguments ("interval")) nil [3947 4198]) ("timeclock-buffer-update-elapsed-time" function (:arguments ("info" "seconds")) nil [4221 4951]) ("timeclock-buffer-idle-update" function (:arguments ("interval")) nil [4953 5552]) ("timeclock-buffer-update" function nil nil [5554 5921]) ("timeclock-buffer-clock-in" function (:arguments ("buffer" "&optional" "time")) nil [5923 6263]) ("timeclock-buffer-track-change" function (:user-visible-flag t) nil [6265 6768]) ("timeclock-buffer-activate" function (:arguments ("activate")) nil [6785 7059]) ("timeclock-buffer" package nil nil [7061 7088]))
+    :file "timeclock-buffer.el"
+    :pointmax 7090
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "iswitchb-highlight.el"
+    :major-mode 'emacs-lisp-mode
+    :tags '(("iswitchb" include nil nil [1221 1240]) ("saint/iswitchb-highlight-1-face" variable (:user-visible-flag t :default-value (quote ((t (:foreground "IndianRed1"))))) nil [1242 1377]) ("saint/iswitchb-highlight-2-face" variable (:user-visible-flag t :default-value (quote ((t (:foreground "DarkSeaGreen3"))))) nil [1378 1516]) ("saint/iswitchb-highlight-3-face" variable (:user-visible-flag t :default-value (quote ((t (:foreground "brightblack"))))) nil [1517 1653]) ("saint/iswitchb-highlight-modes-alist" variable (:user-visible-flag t :default-value (quote (("Dired" . 1) ("Planner" . 2) ("Fundamental" . 3) ("Completions" . 3)))) nil [1655 2056]) ("saint/iswitchb-highlight-modes" variable (:user-visible-flag t :default-value t) nil [2058 2256]) ("saint/iswitchb-highlight-buflist" function nil nil [2258 3827]) ("add-hook" code nil nil [3829 3901]) ("iswitchb-highlight" package nil nil [3903 3932]))
+    :file "iswitchb-highlight.el"
+    :pointmax 3970
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "audio-mixer.el"
+    :major-mode 'emacs-lisp-mode
+    :tags '(("defgroup" code nil nil [1779 1871]) ("audio-mixer-master-volume" variable (:default-value 60) nil [1873 1975]) ("audio-mixer-volume-default-offset" variable (:default-value 5) nil [1977 2116]) ("audio-mixer-device-file" variable nil nil [2118 2333]) ("audio-mixer-default-program" variable (:user-visible-flag t :default-value (quote aumix)) nil [2335 2675]) ("audio-mixer-program" variable nil nil [2677 2869]) ("audio-mixer-set-volume-function" variable nil nil [2871 2978]) ("defgroup" code nil nil [3004 3120]) ("amixer-program-name" variable (:default-value "amixer") nil [3122 3251]) ("amixer-master-volume-id" variable (:default-value 40) nil [3253 3553]) ("amixer-card-id" variable nil nil [3555 3679]) ("amixer-set-volume-function" function (:arguments ("num")) nil [3681 4034]) ("defgroup" code nil nil [4059 4168]) ("aumix-program-name" variable (:default-value "aumix") nil [4170 4290]) ("aumix-set-volume-function" function (:arguments ("num")) nil [4292 4533]) ("audio-mixer-setup" function nil nil [4549 5087]) ("audio-mixer-set-volume" function (:user-visible-flag t :arguments ("num")) nil [5104 5427]) ("audio-mixer-increment-volume" function (:user-visible-flag t :arguments ("&optional" "arg")) nil [5444 5729]) ("audio-mixer-decrement-volume" function (:user-visible-flag t :arguments ("&optional" "arg")) nil [5746 6033]) ("audio-mixer" package nil nil [6035 6057]))
+    :file "audio-mixer.el"
+    :pointmax 6058
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "old-xterm.el"
+    :major-mode 'emacs-lisp-mode
+    :tags '(("server" include nil nil [968 985]) ("let" code nil nil [987 3317]) ("xterm-standard-colors" variable (:default-value (quote (("black" 0 (0 0 0)) ("red" 1 (205 0 0)) ("green" 2 (0 205 0)) ("yellow" 3 (205 205 0)) ("blue" 4 (0 0 205)) ("magenta" 5 (205 0 205)) ("cyan" 6 (0 205 205)) ("white" 7 (229 229 229)) ("brightblack" 8 (77 77 77)) ("brightred" 9 (255 0 0)) ("brightgreen" 10 (0 255 0)) ("brightyellow" 11 (255 255 0)) ("brightblue" 12 (0 0 255)) ("brightmagenta" 13 (255 0 255)) ("brightcyan" 14 (0 255 255)) ("brightwhite" 15 (255 255 255))))) nil [3382 4404]) ("xterm-rgb-convert-to-16bit" function (:arguments ("prim")) nil [4406 4575]) ("xterm-register-default-colors" function nil nil [4577 7618]) ("xterm-rxvt-set-background-mode" function nil nil [7806 8730]) ("xterm-register-default-colors" code nil nil [8742 8773]) ("and" code nil nil [8883 9012]) ("tty-set-up-initial-frame-faces" code nil nil [9090 9122]))
+    :file "old-xterm.el"
+    :pointmax 9197
+    )
+   )
+  :file "semantic.cache"
+  :semantic-tag-version "2.0pre3"
+  :semanticdb-version "2.0pre3"
+  )
