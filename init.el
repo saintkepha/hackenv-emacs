@@ -10,7 +10,7 @@
 ;; Path Variables    ;;
 ;;;;;;;;;;;;;;;;;;;;;;;
 
-(defconst emacs-home-dir (expand-file-name "~/Emacs/")
+(defconst emacs-home-dir (expand-file-name "~/hackenv-emacs/")
   "Home directory for emacs")
 
 (defconst emacs-packages-dir (expand-file-name "packages/" emacs-home-dir)

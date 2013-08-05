@@ -32,20 +32,25 @@
 ;; Cedet    ;;
 ;;;;;;;;;;;;;;
 
-(load-file (expand-file-name "cedet-1.0pre6/common/cedet.el" emacs-packages-dir))
-(require 'semantic-gcc)
-(semantic-load-enable-minimum-features)
-(semantic-load-enable-code-helpers)
-(semantic-load-enable-gaudy-code-helpers)
+;; with emacs24 semantic is bundled in
+;(load-file (expand-file-name "cedet-1.0pre6/common/cedet.el" emacs-packages-dir))
+;(require 'semantic-gcc)
+;(semantic-load-enable-minimum-features)
+;(semantic-load-enable-code-helpers)
+;(semantic-load-enable-gaudy-code-helpers)
 ;; (semantic-load-enable-excessive-code-helpers)
 ;; (semantic-load-enable-semantic-debugging-helpers)
+(semantic-mode 1)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Emacs Code Browser	 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(add-to-list 'load-path (expand-file-name "ecb-2.32" emacs-packages-dir))
-(require 'ecb-autoloads)
+;; with emacs24 ecb is bundled in
+;(add-to-list 'load-path (expand-file-name "ecb-2.32" emacs-packages-dir))
+;;(require 'ecb-autoloads)
+
+(global-ede-mode 1)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;_* Changelog
