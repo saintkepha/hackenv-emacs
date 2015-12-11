@@ -188,3 +188,6 @@
 (add-to-list 'auto-mode-alist
 			 (cons (concat "\\." (regexp-opt '("json") t) "\\'")
 				   'json-mode))
+
+(load-file (expand-file-name "yang-mode.el" emacs-packages-dir))
+(load-file (expand-file-name "yaml-mode.el" emacs-packages-dir))
