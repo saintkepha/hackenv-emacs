@@ -171,7 +171,6 @@
 
 (add-to-list 'load-path (expand-file-name "coffee-mode" emacs-packages-dir))
 (require 'coffee-mode)
-
 (defun coffee-custom ()
     "coffee-mode-hook"
 	;; Emacs key binding
@@ -190,4 +189,16 @@
 				   'json-mode))
 
 (load-file (expand-file-name "yang-mode.el" emacs-packages-dir))
+(defun my-yang-mode-hook ()
+  "Configuration for YANG Mode. Add this to `yang-mode-hook'."
+  (progn
+		(c-set-style "BSD")
+		(setq indent-tabs-mode nil)
+		(setq c-basic-offset 2)
+		(setq font-lock-maximum-decoration t)
+		(font-lock-mode t)))
+
+(add-hook 'yang-mode-hook 'my-yang-mode-hook)
+
+
 (load-file (expand-file-name "yaml-mode.el" emacs-packages-dir))

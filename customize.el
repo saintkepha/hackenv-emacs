@@ -1,11 +1,12 @@
 
 (custom-set-variables
-  ;; custom-set-variables was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(canlock-password "65b941b580e5929c8ac95266fec4130f3e586b0d")
  '(check-mail-summary-function (quote check-mail-box-summary) t)
+ '(coffee-tab-width 2)
  '(desktop-buffers-not-to-save "\\(^nn\\.a[0-9]+\\|\\.log\\|(ftp)\\|^tags\\|^TAGS\\|^=tagging.*\\)$")
  '(ecb-layout-name "left-analyse")
  '(ecb-options-version "2.32")
@@ -22,14 +23,15 @@
  '(jabber-nickname "saint")
  '(jabber-post-connect-hooks (quote (jabber-send-current-presence jabber-muc-autojoin jabber-whitespace-ping-start jabber-keepalive-start jabber-vcard-avatars-find-current jabber-autoaway-start)))
  '(jabber-resource "emacs")
+ '(js-indent-level 2)
  '(org-agenda-files (quote ("~/Organizer/JesseDutton.org" "~/Organizer/Notes.org" "~/Organizer/Clearpath.org" "~/Organizer/Personal.org")))
  '(scheme-program-name "scm"))
  
 (custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(cperl-array-face ((t (:foreground "yellow"))))
  '(cperl-hash-face ((t (:foreground "wheat"))))
  '(diff-added-face ((t (:inherit diff-changed-face :foreground "green"))) t)
